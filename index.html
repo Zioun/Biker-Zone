@@ -8,6 +8,15 @@
   <!-- daisy ui cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    .poppins{
+        font-family: 'Poppins', sans-serif;
+    }
+  </style>
 
   <script>
     tailwind.config = {
@@ -15,7 +24,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            btnClore: '#E76F51',
+            primaryColor: '#E76F51',
+            primaryBgc: '#E76F511A',
           }
         }
       }
@@ -49,31 +59,69 @@
               </ul>
             </div>
             <div class="">
-              <a class="btn bg-btnClore text-white hover:bg-btnClore">Login</a>
+              <a class="btn bg-primaryColor text-white hover:bg-primaryColor">Login</a>
             </div>
         </div>
     </nav>
     <!-- carousel section start-->
     <section>
-        <div class="carousel w-full">
-            <div id="item1" class="carousel-item w-full">
-              <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+        <div class="carousel w-full bg-primaryBgc lg:max-h-[500px]">
+            <div id="slide1" class="carousel-item relative w-full flex flex-col lg:flex-row items-center">
+                <div class="flex-1 p-[104px]">
+                    <h1 class="text-[60px] poppins font-extrabold">Ride-on R15 V4 <br> with Smile</h1>
+                    <p class="mt-[20px] mb-[30px]">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+                    <button class="btn bg-primaryColor hover:bg-primaryColor text-white font-bold text-[20px]">Purchase</button>
+                </div>
+                <div class="flex-1">
+                    <img src="images/slider/bike1.png" class="w-[440px]" />
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
             </div> 
-            <div id="item2" class="carousel-item w-full">
-              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="flex-1 p-[104px]">
+                    <h1 class="text-[60px] poppins font-extrabold">Ride-on R15 V4 <br> with Smile</h1>
+                    <p class="mt-[20px] mb-[30px]">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+                    <button class="btn bg-primaryColor hover:bg-primaryColor text-white font-bold text-[20px]">Purchase</button>
+                </div>
+                <div class="flex-1">
+                    <img src="images/slider/bike1.png" class="w-[440px]" />
+                </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
             </div> 
-            <div id="item3" class="carousel-item w-full">
-              <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="flex-1 p-[104px]">
+                    <h1 class="text-[60px] poppins font-extrabold">Ride-on R15 V4 <br> with Smile</h1>
+                    <p class="mt-[20px] mb-[30px]">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+                    <button class="btn bg-primaryColor hover:bg-primaryColor text-white font-bold text-[20px]">Purchase</button>
+                </div>
+                <div class="flex-1">
+                    <img src="images/slider/bike1.png" class="w-[440px]" />
+                </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
             </div> 
-            <div id="item4" class="carousel-item w-full">
-              <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="flex-1 p-[104px]">
+                    <h1 class="text-[60px] poppins font-extrabold">Ride-on R15 V4 <br> with Smile</h1>
+                    <p class="mt-[20px] mb-[30px]">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit.</p>
+                    <button class="btn bg-primaryColor hover:bg-primaryColor text-white font-bold text-[20px]">Purchase</button>
+                </div>
+                <div class="flex-1">
+                    <img src="images/slider/bike1.png" class="w-[440px]" />
+                </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
             </div>
-          </div> 
-          <div class="flex justify-center w-full py-2 gap-2">
-            <a href="#item1" class="btn btn-xs">1</a> 
-            <a href="#item2" class="btn btn-xs">2</a> 
-            <a href="#item3" class="btn btn-xs">3</a> 
-            <a href="#item4" class="btn btn-xs">4</a>
           </div>
     </section>
     <!-- carousel section end -->
