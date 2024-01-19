@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- tailwind css cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisy ui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            btnClore: '#E76F51',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="md:container md:m-auto">
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="flex flex-1">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <h1 class="text-2xl font-bold">Biker Zone</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <a class="btn bg-btnClore text-white hover:bg-btnClore">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- carousel section start-->
+    <section>
+        <div class="carousel w-full">
+            <div id="item1" class="carousel-item w-full">
+              <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+            </div> 
+            <div id="item2" class="carousel-item w-full">
+              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+            </div> 
+            <div id="item3" class="carousel-item w-full">
+              <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+            </div> 
+            <div id="item4" class="carousel-item w-full">
+              <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+            </div>
+          </div> 
+          <div class="flex justify-center w-full py-2 gap-2">
+            <a href="#item1" class="btn btn-xs">1</a> 
+            <a href="#item2" class="btn btn-xs">2</a> 
+            <a href="#item3" class="btn btn-xs">3</a> 
+            <a href="#item4" class="btn btn-xs">4</a>
+          </div>
+    </section>
+    <!-- carousel section end -->
+  </header>
+</body>
+</html>
